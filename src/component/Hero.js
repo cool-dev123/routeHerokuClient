@@ -97,7 +97,7 @@ export default function Hero() {
 
   const calculateRoutes = (event) => {
 
-    const socket = io(API_ENDPOINT_WS, {
+    const socket = io(API_ENDPOINT_HTTP, {
       path: '/calc/progress',
       transports: ["websocket"]
     })
